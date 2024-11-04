@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlight Word</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="popup.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="d-flex justify-content-end p-2">
+        <button id="closeButton" class="btn-close" aria-label="Close"></button>
+    </div>
+    <div class="d-flex flex-column align-items-center text-center p-3">
+        <span class="mb-3">Powered By</span>
+        <img src="/icons/download.png" alt="Logo" class="logo img-fluid mb-3">
+
+        <div class="mt-5 container text-center">
+            <h5 class="mb-2">Please enter a word to highlight :</h5>
+            <div class="form-group">
+                <input type="text" class="form-control" id="wordInput" placeholder="Enter the word to highlight">
+            </div>
+            <button id="highlightButton" class="mt-2 btn btn-success btn-block">Highlight this word</button>
+            <div class="text-danger mt-2" id="errorMessage"></div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
